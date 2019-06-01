@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import DisplayData from "./components/DisplayData";
+import DisplayDataContainer from "./components/DisplayDataContainer";
 
 const App = () => {
-    const [query, setQuery] = useState("");
     return (
         <div className='App'>
-            <DisplayData query={query} onQueryChange={setQuery} />
+            <DisplayDataContainer />
         </div>
     );
 };
